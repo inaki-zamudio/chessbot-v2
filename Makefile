@@ -1,8 +1,8 @@
 CXX = g++
-CXXFLAGS = -Iincludes -Wall -Wextra -std=c++11
+CXXFLAGS = -Iincludes -Wall -Wextra -std=c++11 -g
 SRC = src/*.cpp
 TEST = test/main.cpp
-TARGET = test
+TARGET = test/test
 
 all: $(TARGET)
 
