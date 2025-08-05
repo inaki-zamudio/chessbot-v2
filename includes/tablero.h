@@ -1,5 +1,4 @@
-#ifndef TABLERO_H
-#define TABLERO_H
+#pragma once
 
 #include <cstdint>
 
@@ -16,5 +15,3 @@ class Tablero {
     public:
         Tablero();
 };
-
-#endif 
