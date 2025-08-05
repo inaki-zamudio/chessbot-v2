@@ -18,5 +18,7 @@ int main() {
     Nota: esto no asegura que el código no quede choto, la idea es irlo refactorizando sobre la marcha, o una vez pase todos los "tests".
 
     */
+
+    t.tableroDePrueba();
     return 0;
 }

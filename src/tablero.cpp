@@ -5,3 +5,7 @@ Tablero::Tablero() {
         piezas[i] = 0;
     }
 }
+
+Tablero::tableroDePrueba() {
+    piezas[RB] = 0x8000000; // rey en e4
+}
