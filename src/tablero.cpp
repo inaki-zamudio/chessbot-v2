@@ -18,7 +18,7 @@ uint64_t Tablero::obtenerRey(Tablero t) {
 
 uint64_t Tablero::todasLasPiezas() {
     uint64_t todasPiezas = 0;
-    for (int i = 0; i < 12; ++i) {
+    for (int i = 0; i < 12; i++) {
         todasPiezas |= piezas[i];
     }
     return todasPiezas;
@@ -30,10 +30,10 @@ bool Tablero::casillaVacia(uint64_t pos) {
 
 void Tablero::moverPieza(uint16_t movimiento) {
     uint64_t salida_bitboard = 1ULL << utils::obtenerSalida(movimiento);
-    for (int i = 0; i < 12; ++i) {
+    for (int i = 0; i < 12; i++) {
         if ((salida_bitboard & piezas[i])) {
             piezas[i] &= ~salida_bitboard; // Elimina la pieza de la posición de salida
-            uint64_t llegada_bitboard = 1ULL << utils::obtenerLlegada(movimiento);
+            uint64_t llegada_bitboard = 1ULL << (utils::obtenerLlegada(movimiento));
             piezas[i] |= llegada_bitboard; // Mueve la pieza a la nueva posición
             return;
         }

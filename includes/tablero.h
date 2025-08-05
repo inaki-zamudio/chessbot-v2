@@ -3,9 +3,9 @@
 #include <cstdint>
 
 enum tipoDePieza { // Sirve para indexar el arreglo de piezas
-    VACIO, // 0
     RB, DB, TB, AB, CB, PB,
-    RN, DN, TN, AN, CN, PN
+    RN, DN, TN, AN, CN, PN,
+    VACIO, // 0
 };
 
 class Tablero {
