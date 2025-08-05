@@ -14,4 +14,7 @@ class Tablero {
     
     public:
         Tablero();
+        void tableroDePrueba(); // Crea un tablero de prueba con el rey en e4
+        uint64_t obtenerRey(Tablero t) const; // Devuelve la posición del rey en el tablero
+        bool casillaVacia(uint64_t pos) const; // Verifica si una casilla está vacía
 };
